@@ -3,6 +3,7 @@ package main
 import (
     "log"
     "net/http"
+    "time"
 )
 
 func home(w http.ResponseWriter, r *http.Request) {
@@ -10,6 +11,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+    time.Sleep(30 * time.Second)
     mux := http.NewServeMux()
     mux.HandleFunc("/", home)
 
