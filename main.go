@@ -6,7 +6,7 @@ import (
 )
 
 func home(w http.ResponseWriter, r *http.Request) {
-    w.Write([]byte("app-version: 1\n"))
+    w.Write([]byte("app-version: 2\n"))
 }
 
 func main() {
