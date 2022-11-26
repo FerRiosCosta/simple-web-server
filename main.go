@@ -11,7 +11,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-    time.Sleep(31 * time.Second)
+    time.Sleep(30 * time.Second)
     mux := http.NewServeMux()
     mux.HandleFunc("/", home)
 
